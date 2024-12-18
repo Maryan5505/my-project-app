@@ -246,6 +246,7 @@ h1,h2,h3,h4,h5,h6{font-size: inherit;font-weight: 400;}
 	background-repeat: no-repeat;
 	background-size: 20px 16px;
   box-sizing: border-box;
+  color: #fff;
  
 }
 
@@ -356,4 +357,248 @@ h1,h2,h3,h4,h5,h6{font-size: inherit;font-weight: 400;}
   align-items: center;
   border-top: 2px solid rgba(0, 0, 0, 0.9);
   color: rgb(255, 255, 255, 0.5);
+}
+
+/*----Categories------------------------------------------------------------*/
+.line {
+  width: 1170;
+  margin: 80px auto 80px auto;
+  border: 0.5px solid rgba(0, 0, 0, 0.3);
+}
+.Categories-title {
+  color: rgba(219, 68, 68, 1);
+  height: 40px;
+  padding: 10px 36px;
+  font-size: 16px;
+  background-image: url('./assets/Categories/TitleImage.png');
+	background-position: 0px 10px;
+	background-repeat: no-repeat;
+	background-size: 20px 40px;
+  box-sizing: border-box;
+  background-position: 0px 1px; 
+}
+.Categories {
+  padding: 0px 134px 0px 134px;
+}
+
+.Categories-filter {
+  font-size: 36px;
+  font-weight: 600;
+  margin-top: 20px;
+  margin-bottom: 60px;
+}
+
+.category-container {
+  display: flex;
+  gap: 50px;
+}
+
+.category-button {
+  width: 170px;
+  height: 145px;
+  
+  border-radius: 4px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  background-color: #fff;
+  
+}
+
+.category-icon-Phones {
+  width: 56px;
+  height: 56px;
+  
+  background-image: url('./assets/Categories/CategoryPhone.png');
+	background-position: 0px 0px;
+	background-repeat: no-repeat;
+	background-size: 27.34px 43.75px;
+  box-sizing: border-box;
+  background-size: cover; 
+  margin-left: auto;
+  margin-right: auto;
+
+}
+.category-icon-Computers {
+  width: 56px;
+  height: 56px;
+  
+  background-image: url('./assets/Categories/CategoryComputer.png');
+	background-position: 0px 0px;
+	background-repeat: no-repeat;
+	background-size: 27.34px 43.75px;
+  box-sizing: border-box;
+  background-size: cover; 
+  margin-left: auto;
+  margin-right: auto;
+
+}
+.category-icon-SmartWatch {
+  width: 56px;
+  height: 56px;
+  
+  background-image: url('./assets/Categories/CategoryWatch.png');
+	background-position: 0px 0px;
+	background-repeat: no-repeat;
+	background-size: 27.34px 43.75px;
+  box-sizing: border-box;
+  background-size: cover; 
+  margin-left: auto;
+  margin-right: auto;
+
+}
+.category-icon-Camera {
+  width: 56px;
+  height: 56px;
+  
+  background-image: url('./assets/Categories/CategoryCamera.png');
+	background-position: 0px 0px;
+	background-repeat: no-repeat;
+	background-size: 27.34px 43.75px;
+  box-sizing: border-box;
+  background-size: cover; 
+  margin-left: auto;
+  margin-right: auto;
+
+}
+.category-icon-HeadPhones {
+  width: 56px;
+  height: 56px;
+  
+  background-image: url('./assets/Categories/CategoryHeadphone.png');
+	background-position: 0px 0px;
+	background-repeat: no-repeat;
+	background-size: 27.34px 43.75px;
+  box-sizing: border-box;
+  background-size: cover; 
+  margin-left: auto;
+  margin-right: auto;
+
+}
+.category-icon-Gaming {
+  width: 56px;
+  height: 56px;
+  
+  background-image: url('./assets/Categories/CategoryGamepad.png');
+	background-position: 0px 0px;
+	background-repeat: no-repeat;
+	background-size: 27.34px 43.75px;
+  box-sizing: border-box;
+  background-size: cover; 
+  margin-left: auto;
+  margin-right: auto;
+
+}
+.category-name {
+  margin-top: 16px;
+}
+
+/*-----Product---------------------------------------------------------------------*/
+.product-list {
+  display: flex;
+  
+  flex-wrap: wrap; 
+  gap: 20px;
+}
+
+.product-card {
+  width: 270px;
+  height: 322px;
+  background-color: aqua;
+}
+
+.show-more-btn {
+  width: 234px;
+  height: 56px;
+  border-radius: 4px;
+  background-color: rgba(219, 68, 68, 1);
+  color: #fff;
+  
+  
+}
+
+.Product-list-button {
+  display: flex;
+  justify-content: center;
+}
+
+.Product {
+  padding: 0px 119px 60px 151px;
+}
+
+.Product-title {
+  color: rgba(219, 68, 68, 1);
+  height: 40px;
+  padding: 10px 36px;
+  font-size: 16px;
+  background-image: url('./assets/Categories/TitleImage.png');
+	background-position: 0px 10px;
+	background-repeat: no-repeat;
+	background-size: 20px 40px;
+  box-sizing: border-box;
+  background-position: 0px 1px; 
+}
+
+
+.Product-subtitle {
+  font-size: 36px;
+  font-weight: 600;
+  margin-top: 20px;
+  margin-bottom: 60px;
+}
+
+.Product-searchinput {
+  width: 243px;
+  padding: 7px 12px 7px 20px;
+  background-color: rgba(245, 245, 245, 1);
+  border-radius: 4px;
+  border: 0;
+  line-height: 18px;
+  background-image: url('./assets/Navigation/Search.png');
+	background-position: 220px 8px;
+	background-repeat: no-repeat;
+	background-size: 16px 16px;
+  box-sizing: border-box;
+}
+
+.Product-form {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 60px;
+}
+
+
+/*---NewArrivals---------------------------------------------*/
+.NewArrivals {
+  margin: 60px 145px 141px 125px;
+}
+.NewArrivals-subtitle {
+  font-size: 36px;
+  font-weight: 600;
+  margin-top: 20px;
+  margin-bottom: 60px;
+}
+
+.NewArrivals-title {
+  color: rgba(219, 68, 68, 1);
+  height: 40px;
+  padding: 10px 36px;
+  font-size: 16px;
+  background-image: url('./assets/Categories/TitleImage.png');
+	background-position: 0px 10px;
+	background-repeat: no-repeat;
+	background-size: 20px 40px;
+  box-sizing: border-box;
+  background-position: 0px 1px; 
+}
+
+.newProduct-card {
+  width: 270px;
+  height: 322px;
+  background-color: aqua;
+}
+
+.NewProducts {
+  display: flex;
+  
+  flex-wrap: wrap; 
+  gap: 20px;
 }
