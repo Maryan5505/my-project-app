@@ -1,12 +1,12 @@
 import React from 'react'
 
-const Banner = () => {
+const Banner = (props) => {
   return (
     <div className="banner">
         <div className="banner-row">
            <div className='banner-title'>
               <div className="banner-text">
-                Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%!
+                {props.title}
               </div>
               <a className="banner-link" href="">
                   ShopNow
