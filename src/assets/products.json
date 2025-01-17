@@ -1,0 +1,50 @@
+[
+    {
+      "id": 1,
+      "name": "Портативна ігрова консоль Asus 1TB",
+      "price": 1100,
+      "imageUrl": "https://content.rozetka.com.ua/goods/images/big/479743681.webp",
+      "rating": "",
+      "isNew": false
+    },
+    {
+      "id": 2,
+      "name": "PlayStation 5 Slim",
+      "price": 1200,
+      "imageUrl": "https://content2.rozetka.com.ua/goods/images/big/489689447.png",
+      "rating": "",
+      "isNew": false
+    },
+    {
+      "id": 3,
+      "name": "Ноутбук Acer Aspire 7",
+      "price": 1000,
+      "imageUrl": "https://content.rozetka.com.ua/goods/images/big_tile/372795220.png",
+      "rating": "",
+      "isNew": false
+    },
+    {
+      "id": 4,
+      "name": "Apple AirPods Pro (2-го покоління)",
+      "price": 250,
+      "imageUrl": "https://content.rozetka.com.ua/goods/images/big_tile/365137070.jpg",
+      "rating": "",
+      "isNew": false
+    },
+    {
+      "id": 5,
+      "name": "Розумний годинник Black Shark GS3",
+      "price": 70,
+      "imageUrl": "https://content2.rozetka.com.ua/goods/images/big/469923001.jpg",
+      "rating": "",
+      "isNew": false
+    },
+    {
+      "id": 6,
+      "name": "Монопод-трипод з пультом",
+      "price": 50,
+      "imageUrl": "https://content1.rozetka.com.ua/goods/images/big/321327332.jpg",
+      "rating": "",
+      "isNew": false
+    }
+  ]

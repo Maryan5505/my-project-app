@@ -1,9 +1,22 @@
 import React from 'react'
+import FacebookIcon from '../assets/Footer/Facebook.png';
+import TwitterIcon from '../assets/Footer/Twitter.png';
+import InstagramIcon from '../assets/Footer/Instagram.png';
+import InIcon from '../assets/Footer/In.png';
+import AppStoreLink from '../assets/Footer/appstore.png';
+import PlayMarketLink from '../assets/Footer/playmarket.jpg';
+import QrCode from '../assets/Footer/Qr.jpg';
+
 
 const Footer = () => {
+    const scrollToTop = () => {
+        document.documentElement.scrollTop = 0; 
+      };
+
+
   return (
     <div className="Footer">
-        <button className="Footer-button"></button>
+        <button className="Footer-button" onClick={scrollToTop}></button>
         <div className="footer-row">
             <div className='footer-column'>
                 <div className='footer-column-title'>
@@ -13,7 +26,9 @@ const Footer = () => {
                     <a className='Footer-subscribe-link' href="">Subscribe</a>
                 </div>
                 <div className='Footer-describe'>
+                        <a href="">
                         Get 10% off your first order
+                        </a>
                 </div>
                 <form action="">
                     <input type="email" placeholder='Enter your email' className='Footer-input' />
@@ -97,29 +112,41 @@ const Footer = () => {
                 </div>
                 <div className='Footer-media'>
                     <div className='Footer-qr'>
-
+                        <img src={QrCode} alt="" />
                     </div>
                     <div className='Footer-download'>
                         <div className='Footer-playmarket'>
-                            <a href="" className='Footer-playmarket-link'></a>
+                            <a href="" className='Footer-playmarket-link'>
+                                <img src={PlayMarketLink} alt="" />
+                            </a>
                         </div>
                         <div className='Footer-appstore'>
-                            <a href="" className='Footer-appstore-link'></a>
+                            <a href="" className='Footer-appstore-link'>
+                                <img src={AppStoreLink} alt="" />
+                            </a>
                         </div>
                     </div>
                 </div>
                 <div className='Footer-social'>
-                    <div className='Footer-social-facebook'>
-                        <a  href=""></a>
+                    <div >
+                        <a  href="" className='Footer-social-facebook'>
+                            <img src={FacebookIcon} alt="" />
+                        </a>
                     </div>
-                    <div className='Footer-social-twitter'>
-                    <a href=""></a>
+                    <div >
+                    <a href="" className='Footer-social-twitter'>
+                        <img src={TwitterIcon} alt="" />
+                    </a>
                     </div>
-                    <div className='Footer-social-instagram'>
-                    <a href=""></a>
+                    <div >
+                    <a href="" className='Footer-social-instagram'>
+                        <img src={InstagramIcon} alt="" />
+                    </a>
                     </div>
-                    <div className='Footer-social-in'>
-                    <a href=""></a>
+                    <div >
+                    <a href="" className='Footer-social-in'>
+                        <img src={InIcon} alt="" />
+                    </a>
                     </div>
                 </div>
             </div>
