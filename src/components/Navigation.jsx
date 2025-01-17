@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Navigation = () => {
   return (
@@ -11,7 +12,7 @@ const Navigation = () => {
             </div>
             <nav>
                 <ul class="Navigation-menu">
-                    <li><a href="">Home</a></li>
+                    <li><Link to="/"href="">Home</Link></li>
                     <li><a href="">Contact</a></li>
                     <li><a href="">About</a></li>
                     <li><a href="">Sign up</a></li>
@@ -21,9 +22,9 @@ const Navigation = () => {
                 <form action="">
                     <input className="Navigation-input" type="text" placeholder='What are you looking for?' />
                 </form>
-                <a className="Navigation-likes" href=""></a>
-                <a className="Navigation-bin" href=""></a>
-                <a className="Navigation-profile" href=""></a>
+                <Link to="/wishlist"className="Navigation-likes" href=""></Link>
+                <Link to="/cart" className="Navigation-bin" href=""></Link>
+                <a to="/cart"className="Navigation-profile" href=""></a>
             </div>
         </div>
     </div>
