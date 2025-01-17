@@ -1,9 +1,12 @@
 import React, { createContext, useState, useEffect } from 'react';
 import RemoveButton from '../assets/Cart/removeButton.png';
+import ProductsData from '../assets/products.json';
 
 const AppContext = createContext();
 
 export const AppProvider = ({ children }) => {
+  const [products, setProducts] = useState([]);
+
   const [cart, setCart] = useState(() => {
     const savedCart = localStorage.getItem('cart');
     return savedCart ? JSON.parse(savedCart) : [];
@@ -21,19 +24,36 @@ export const AppProvider = ({ children }) => {
     localStorage.setItem('wishlist', JSON.stringify(wishlist));
   }, [wishlist]);
 
+  useEffect(() => {
+    setProducts(ProductsData); 
+  }, []);
+
+  
+
+
+  
+  
+
+
   const addToCart = (product) => {
+
+    if (wishlist.some((item) => item.id === product.id)) {
+      setWishlist((prevWishlist) => prevWishlist.filter((item) => item.id !== product.id));
+    }
+
+
     setCart((prevCart) => [...prevCart, { ...product, quantity: 1 }]);
   };
 
   const addToWishlist = (product) => {
-    setWishlist((prevWishlist) => {
-      const isInWishlist = prevWishlist.some((item) => item.id === product.id);
-      if (isInWishlist) {
-        return prevWishlist.filter((item) => item.id !== product.id); 
-      } else {
-        return [...prevWishlist, product]; 
-      }
-    });
+    if (cart.some((item) => item.id === product.id)) {
+      setCart((prevCart) => prevCart.filter((item) => item.id !== product.id));
+    }
+
+    
+    if (!wishlist.some((item) => item.id === product.id)) {
+      setWishlist((prevWishlist) => [...prevWishlist, product]);
+    }
   };
 
   const removeFromCart = (productId) => {
@@ -72,7 +92,7 @@ export const AppProvider = ({ children }) => {
 
 
   return (
-    <AppContext.Provider value={{ cart, wishlist, addToCart, addToWishlist, removeFromCart, removeFromWishlist, moveAllToCart, updateQuantity, RemoveButton }}>
+    <AppContext.Provider value={{ products, cart, wishlist, addToCart, addToWishlist, removeFromCart, removeFromWishlist, moveAllToCart, updateQuantity, RemoveButton }}>
       {children}
     </AppContext.Provider>
   );
